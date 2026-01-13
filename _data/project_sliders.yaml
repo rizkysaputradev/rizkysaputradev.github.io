@@ -1,0 +1,87 @@
+syntra:
+  - src: /assets/img/projects/syntra.jpg
+    alt: SyntraLine++ architecture overview
+    caption: "SyntraLine++ Compiler Architecture"
+  - src: /assets/img/projects/syntra/syntra-exec.jpg
+    alt: Execution Backend
+    caption: "Backend Execution Sample"
+  - src: /assets/img/projects/syntra/syntra-syntax.jpg
+    alt: SyntraLine++ Syntax
+    caption: "Syntra Module Syntax Sample"
+
+fer:
+  - src: /assets/img/projects/fer.jpg
+    alt: FER Display
+    caption: "Real Time FER Burnout Detection System Display"
+  - src: /assets/img/projects/fer/fer-architecture.jpg
+    alt: FER Achitecture
+    caption: "FER Based Burnout Detection System Architecture"
+  - src: /assets/img/projects/fer/fer-graph-neg.jpg
+    alt: FER Negative Valence
+    caption: "FER Negative Valence Emotion Graph Over Time"
+
+picas:
+  - src: /assets/img/projects/picas.jpg
+    alt: PICAS Architecture
+    caption: "PICAS Main Architecture"
+  - src: /assets/img/projects/picas/picas-alloc.jpg
+    alt: PICAS Allocation
+    caption: "PICAS Memory Allocation Sample"
+  - src: /assets/img/projects/picas/picas-run.jpg
+    alt: PICAS Execution
+    caption: "PICAS Sample Default Allocation"
+
+ambientor:
+  - src: /assets/img/projects/ambientor.jpg
+    alt: Ambientor DSP Architecture
+    caption: "Ambientor Main DSP Based Architecture"
+  - src: /assets/img/projects/ambientor/ambientor-simd.jpg
+    alt: SIMD Architecture
+    caption: "SIMD Architecture for x86 and ARM Processors"
+  - src: /assets/img/projects/ambientor/ambientor-exec.jpg
+    alt: Ambientor Execution
+    caption: "Ambientor Sample Default Execution"
+
+vfrt:
+  - src: /assets/img/projects/vfrt.jpg
+    alt: VFRT Display
+    caption: "Vision Fusion Real Time (VFRT) System Display"
+  - src: /assets/img/projects/vfrt/vfrt-clip.jpg
+    alt: Clip Embeddings
+    caption: "Clip Embeddings Algorithm and Architecture"
+  - src: /assets/img/projects/vfrt/vfrt-config.jpg
+    alt: Dataclass Initialization
+    caption: "Dataclasses Initialization and Configurations"
+
+dimca:
+  - src: /assets/img/projects/dimca.jpg
+    alt: DIMCA Architecture
+    caption: "DIMCA Main Architecture"
+  - src: /assets/img/projects/dimca/dimca-alloc.jpg
+    alt: PICAS Allocation
+    caption: "DIMCA Memory Allocation Sample"
+  - src: /assets/img/projects/dimca/dimca-exec.jpg
+    alt: DIMCA Execution
+    caption: "DIMCA Sample Default Execution"
+
+bistro:
+  - src: /assets/img/projects/bistro.jpg
+    alt: Byte Bistro Architecture
+    caption: "Byte Bistro Main Architecture"
+  - src: /assets/img/projects/bistro/bistro-gbn.jpg
+    alt: GBN Protocol
+    caption: "GBN Protocol Architecture Sample"
+  - src: /assets/img/projects/bistro/bistro-sr.jpg
+    alt: SR Protocol
+    caption: "SR Protocol Architecture Sample"
+
+polite:
+  - src: /assets/img/projects/polite.jpg
+    alt: Politeness Rewriter Architecture
+    caption: "Politeness Rewriter Main Architecture via T5"
+  - src: /assets/img/projects/polite/polite-out.jpg
+    alt: Politeness Rewriter Output
+    caption: "Politeness Rewriter Sample Output"
+  - src: /assets/img/projects/polite/polite-graph.jpg
+    alt: Politeness Rewriter Metrics
+    caption: "Politeness Rewriter Performance and Statistical Metrics"

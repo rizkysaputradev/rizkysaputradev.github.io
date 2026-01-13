@@ -1,0 +1,70 @@
+<div class="proj-slider" data-slider>
+  <div class="proj-slider-viewport">
+    <div class="proj-slider-track" data-track>
+      {% for img in include.images %}
+      <figure class="proj-slide">
+        <img src="{{ img.src }}" alt="{{ img.alt | default: 'Project image' }}">
+        {% if img.caption %}
+          <figcaption class="muted">{{ img.caption }}</figcaption>
+        {% endif %}
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="proj-slider-controls">
+    <button class="proj-btn" type="button" data-prev aria-label="Previous image">←</button>
+    <div class="proj-dots" data-dots></div>
+    <button class="proj-btn" type="button" data-next aria-label="Next image">→</button>
+  </div>
+</div>
+
+<script>
+(function () {
+  const root = document.currentScript.previousElementSibling;
+  if (!root || !root.matches('[data-slider]')) return;
+
+  const track = root.querySelector('[data-track]');
+  const slides = Array.from(root.querySelectorAll('.proj-slide'));
+  const dots = root.querySelector('[data-dots]');
+  const prev = root.querySelector('[data-prev]');
+  const next = root.querySelector('[data-next]');
+
+  let i = 0;
+
+  function renderDots() {
+    dots.innerHTML = '';
+    slides.forEach((_, idx) => {
+      const b = document.createElement('button');
+      b.className = 'proj-dot' + (idx === i ? ' active' : '');
+      b.type = 'button';
+      b.setAttribute('aria-label', `Go to image ${idx + 1}`);
+      b.addEventListener('click', () => go(idx));
+      dots.appendChild(b);
+    });
+  }
+
+  function go(idx) {
+    i = (idx + slides.length) % slides.length;
+    track.style.transform = `translateX(${-i * 100}%)`;
+    renderDots();
+  }
+
+  prev.addEventListener('click', () => go(i - 1));
+  next.addEventListener('click', () => go(i + 1));
+
+  // swipe support (mobile)
+  let startX = null;
+  root.addEventListener('touchstart', (e) => startX = e.touches[0].clientX, { passive: true });
+  root.addEventListener('touchend', (e) => {
+    if (startX == null) return;
+    const dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) > 40) go(dx < 0 ? i + 1 : i - 1);
+    startX = null;
+  }, { passive: true });
+
+  // init
+  track.style.transform = 'translateX(0%)';
+  renderDots();
+})();
+</script>

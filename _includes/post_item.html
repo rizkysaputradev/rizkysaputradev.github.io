@@ -1,0 +1,42 @@
+{% assign p = include.post %}
+
+<a
+  class="post-item"
+  href="{{ p.url }}"
+  data-title="{{ p.title | downcase }}"
+  data-tags="{{ p.tags | join: ' ' | downcase }}"
+  data-cats="{{ p.categories | join: ' ' | downcase }}"
+  data-excerpt="{{ p.excerpt | strip_html | strip_newlines | downcase }}"
+>
+  <div class="post-item-main">
+    <div class="post-item-title">{{ p.title }}</div>
+
+    {% if p.subtitle %}
+      <div class="post-item-subtitle">{{ p.subtitle }}</div>
+    {% endif %}
+
+    <div class="post-item-meta muted">
+      <span class="post-item-read">{{ p.reading_time | default: "3 min read" }}</span>
+      <span class="dot">•</span>
+
+      <!-- clickable date -> year archive -->
+      {% assign y = p.date | date: "%Y" %}
+      <a class="post-item-date" href="/year/{{ y }}/">{{ p.date | date: "%B %d, %Y" }}</a>
+
+      {% if p.tags and p.tags.size > 0 %}
+        <span class="dot">•</span>
+        <span class="post-item-tags">
+          {% for t in p.tags %}
+            <a class="tag" href="/tag/{{ t | slugify }}/">{{ t }}</a>
+          {% endfor %}
+        </span>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if p.thumb %}
+    <div class="post-item-thumb">
+      <img src="{{ p.thumb }}" alt="{{ p.title }} thumbnail">
+    </div>
+  {% endif %}
+</a>

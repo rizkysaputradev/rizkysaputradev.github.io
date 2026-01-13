@@ -1,0 +1,32 @@
+about_me:
+  - src: /assets/img/about/me-01.jpg
+    alt: Rizky Picture 1
+    caption: "Seoul · 2025 🇰🇷"
+
+  - src: /assets/img/about/me-02.jpg
+    alt: Rizky Picture 2
+    caption: "Jakarta · 2024 🇮🇩"
+
+  - src: /assets/img/about/me-03.jpg
+    alt: Rizky Picture 3
+    caption: "Tokyo · 2024 🇯🇵"
+
+about_work:
+  - src: /assets/img/about/proj-02.jpg
+    caption: "Robotics Data Collection and Training"
+
+  - src: /assets/img/about/proj-03.jpg
+    caption: "Skin Segmentor using SegFormer and MiT Encoder"
+
+  - src: /assets/img/about/proj-01.jpg
+    caption: "Developing a Simple Microprocessor using FPGA"
+
+research_sliders:
+  - src: /assets/img/research/rs-01.jpg
+    caption: "Project Code Workflow and GitHub Documentation"
+
+  - src: /assets/img/research/rs-02.jpg
+    caption: "Breadboard Functionality and Connectivity Practice"
+
+  - src: /assets/img/research/rs-03.jpg
+    caption: "Skin Segmentor AI to Android debugging"
