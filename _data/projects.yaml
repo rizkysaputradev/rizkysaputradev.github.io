@@ -1,0 +1,55 @@
+- title: "SyntraLine++ DSL Compiler"
+  url: "/projects/syntra/"
+  image: "/assets/img/projects/syntra.jpg"
+  summary: "A DSL based compiler with IR pipeline and LLVM-style passes in machine learning training systems across PyTorch and JAX backends."
+  tags: ["C++", "Python", "PyTorch", "IR", "JAX", "Compiler Design", "Real-Time System"]
+  featured: true
+
+- title: "FER Based Burnout Detection Sytem"
+  url: "/projects/fer-burnout/"
+  image: "/assets/img/projects/fer.jpg"
+  summary: "Multi-user real-time facial emotion recognition with temporal modeling, dashboards, and validation metrics."
+  tags: ["Python", "FER", "LSTM", "OpenCV", "Computer Vision", "Machine Learning", "Deep Learning"]
+  featured: true
+
+- title: "PICAS Customized Memory Allocator"
+  url: "/projects/picas/"
+  image: "/assets/img/projects/picas.jpg"
+  summary: "Policy-indexed contiguous allocation system for deterministic real-time allocation behavior."
+  tags: ["C++", "Allocator", "Multithreading", "Cache", "Memory Management", "System Programming", "Hardware/Software Co-Design"]
+  featured: true
+
+- title: "Multithreaded Ambientor Real Time System"
+  url: "/projects/ambientor/"
+  image: "/assets/img/projects/ambientor.jpg"
+  summary: "Cross-platform, multithreaded real-time ambient sound engine built with Rust, C++, Python bindings, and SIMD-accelerated DSP."
+  tags: ["Rust", "Assembly", "C++", "DSP", "SIMD", "Embedded System", "Computer Architecture"]
+  featured: true
+
+- title: "Vision Fusion Real Time (VFRT) System"
+  url: "/projects/vfrt/"
+  image: "/assets/img/projects/vfrt.jpg"
+  summary: "Real-time retrieval multimodial AI based system that allows a visual input into a CLIP-powered object recognizer with a small, yet sufficient self-growing memory."
+  tags: ["Python", "RAG", "FAISS", "OpenCV", "Computer Vision", "Deep Learning", "Real-Time System"]
+  featured: true
+
+- title: "DIMCA Customized Memory Allocator"
+  url: "/projects/dimca/"
+  image: "/assets/img/projects/dimca.jpg"
+  summary: "Customized algorithm designed to enhance memory allocation performance by optimizing how data capsules are distributed across multi-level memory pools."
+  tags: ["C", "Assembly", "Allocator", "Multithreading", "Memory Management", "System Programming", "Computer Architecture"]
+  featured: true
+
+- title: "Byte Bistro Transport Protocols"
+  url: "/projects/bistro/"
+  image: "/assets/img/projects/bistro.jpg"
+  summary: "Customized algorithm designed to enhance memory allocation performance by optimizing how data capsules are distributed across multi-level memory pools."
+  tags: ["C", "UDP", "SR", "GBN", "Data Communication", "Computer Networks", "System Programming"]
+  featured: true
+
+- title: "Classifier Guided Politeness Rewriting System"
+  url: "/projects/polite/"
+  image: "/assets/img/projects/polite.jpg"
+  summary: "Politeness Rewriter is a hybrid NLP system that detects, classifies and rewrites user input into polite, respectful text using a combination of transformer-based classifiers and controlled text generation."
+  tags: ["Python", "Jupyter", "T5", "GBN", "Distilbert", "Natural Language Processing", "Deep Learning"]
+  featured: true

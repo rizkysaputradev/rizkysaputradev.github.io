@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <div class="post-meta">
+      <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
+      <span class="dot">•</span>
+      <span class="post-read">{{ page.reading_time | default: "3 min read" }}</span>
+
+      {% if page.tags and page.tags.size > 0 %}
+        <span class="dot">•</span>
+        <span class="post-tags">
+          {% for t in page.tags %}
+            <span class="tag">{{ t }}</span>
+          {% endfor %}
+        </span>
+      {% endif %}
+    </div>
+
+    <h1 class="post-title">{{ page.title }}</h1>
+
+    {% if page.subtitle %}
+      <p class="post-subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+  </header>
+
+  <div class="post-content content">
+
+    {% if page.cover %}
+      <figure class="post-float-media">
+        <img src="{{ page.cover }}" alt="{{ page.title }} cover">
+        {% if page.cover_caption %}
+          <figcaption class="muted">{{ page.cover_caption }}</figcaption>
+        {% endif %}
+      </figure>
+    {% endif %}
+
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    <a class="link" href="/blog/">← Back to Blog</a>
+  </footer>
+</article>

@@ -1,0 +1,16 @@
+{% assign pub = include.pub %}
+<div class="pub">
+  <div class="pub-title">
+    {% if pub.url %}
+      <a href="{{ pub.url }}">{{ pub.title }}</a>
+    {% else %}
+      {{ pub.title }}
+    {% endif %}
+  </div>
+  <div class="pub-meta muted">
+    {{ pub.venue }} · {{ pub.year }}
+  </div>
+  {% if pub.note %}
+    <div class="pub-note">{{ pub.note }}</div>
+  {% endif %}
+</div>

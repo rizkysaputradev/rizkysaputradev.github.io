@@ -1,0 +1,25 @@
+{% assign p = include.project %}
+
+<article
+  class="card project-card"
+  data-title="{{ p.title | downcase }}"
+  data-tags="{{ p.tags | join: ' ' | downcase }}"
+  data-desc="{{ p.summary | downcase }}"
+>
+  <a class="card-link" href="{{ p.url }}">
+    <div class="card-top">
+      <img src="{{ p.image }}" alt="{{ p.title }} cover">
+    </div>
+
+    <div class="card-body">
+      <div class="card-title">{{ p.title }}</div>
+      <div class="card-desc">{{ p.summary }}</div>
+
+      <div class="chips">
+        {% for t in p.tags %}
+          <span class="chip">{{ t }}</span>
+        {% endfor %}
+      </div>
+    </div>
+  </a>
+</article>

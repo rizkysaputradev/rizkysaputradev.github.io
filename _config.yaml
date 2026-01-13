@@ -1,0 +1,33 @@
+title: "Rizky Johan Saputra"
+description: "Systems • Memory Allocation • Compilers • Multimodal AI"
+url: "https://rizkysaputradev.github.io"
+baseurl: ""
+
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+collections:
+  project_pages:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+paginate: 12
+paginate_path: "/blog/page/:num/"
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+github_username: "rizkysaputradev"
+linkedin_username: "rizky-johan-saputra"

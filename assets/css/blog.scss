@@ -1,0 +1,141 @@
+/* =========================
+   Blog
+   ========================= */
+
+.blog-index { margin-top: 8px; }
+.blog-intro { margin-bottom: 18px; max-width: 72ch; }
+
+.blog-list { display: grid; gap: 14px; }
+
+.post-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  padding: 16px 16px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.02);
+  transition: transform 0.12s ease, border-color 0.12s ease;
+}
+
+.post-item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(125,211,252,0.22);
+}
+
+.post-item-title {
+  font-size: 28px;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  font-weight: 650;
+  margin-bottom: 6px;
+}
+
+.post-item-subtitle {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.post-item-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  font-size: 13px;
+}
+
+.dot { opacity: 0.7; }
+
+.tag {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.02);
+}
+
+.post-item-thumb img {
+  width: 160px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 780px) {
+  .post-item {
+    grid-template-columns: 1fr;
+  }
+  .post-item-thumb img {
+    width: 100%;
+    height: 160px;
+  }
+}
+
+.post {
+  padding: 36px 0;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.post-header { margin-bottom: 18px; }
+
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 13px;
+  font-family: var(--mono);
+}
+
+.post-title {
+  margin: 12px 0 8px;
+  font-size: 42px;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.post-subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  max-width: 70ch;
+}
+
+.post-cover {
+  margin: 18px 0 0;
+}
+
+.post-cover img {
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 40px var(--shadow);
+}
+
+.post-content {
+  margin-top: 22px;
+}
+
+.post-content img {
+  max-width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+.post-footer {
+  margin-top: 26px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.blog-pagination {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+}
