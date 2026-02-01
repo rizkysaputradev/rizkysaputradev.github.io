@@ -1,9 +1,25 @@
 ---
-title: CV
-subtitle: "Downloadable PDF"
+title: CV / Resume
+subtitle: "For more information, please download my CV / resume below"
 ---
 
-- [Download CV (PDF)](/assets/pdf/Rizky_Johan_Saputra_CV.pdf)
+<div class="paper-download-card">
+  <div class="paper-download-meta">
+    <div class="paper-download-title">
+      Rizky Johan Saputra's Personal CV / Resume
+    </div>
+    <div class="paper-download-desc">
+      The full explanation on my CV / Resume consisting of my education,
+      experience, contributions, technical skills and etc. This document
+      is mainly for professional use only.
+    </div>
+  </div>
 
-You can also view my GitHub for full project history:
-- https://github.com/rizkysaputradev
+  <a
+    class="paper-download-btn"
+    href="/papers/cv/CV_Resume_Rizky_Johan_Saputra.pdf"
+    download
+    >
+    Download PDF
+  </a>
+</div>

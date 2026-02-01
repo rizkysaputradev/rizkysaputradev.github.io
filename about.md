@@ -19,7 +19,7 @@ subtitle: "Systems-first engineer with research-style rigor"
     </p>
     <p>
       I recently completed my B.S. in Computer Science and Engineering at
-      <a href="https://www.snu.ac.kr" target="_blank" rel="noopener noreferrer">Seoul National University</a>, where my work spanned low-level systems, vision-based systems, compiler-style pipelines, and applied multimodal AI. I did my undergraduate thesis on <a href="/Papers/fer.md" target="_blank" rel="noopener noreferrer">The Application of Facial Emotion Recognition (FER) in the Detection and Measurement of Burnout and Prolonged Stress Levels</a>. My ultimate goal is to create a tech based startup firm related to either machine learning, computer vision or robotics systems into various fields such as AI, medicine or farming.
+      <a href="https://www.snu.ac.kr" target="_blank" rel="noopener noreferrer">Seoul National University</a>, where my work spanned low-level systems, vision-based systems, compiler-style pipelines, and applied multimodal AI. I did my undergraduate thesis on <a href="/papers/fer/" target="_blank" rel="noopener noreferrer">The Application of Facial Emotion Recognition (FER) in the Detection and Measurement of Burnout and Prolonged Stress Levels</a>. My ultimate goal is to create a tech based startup firm related to either machine learning, computer vision or robotics systems into various fields such as AI, medicine or farming.
     </p>
     <h3>Core Research and Engineering Focus</h3>
     <ul>
